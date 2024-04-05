@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="lu">
+        <meta name="description" content="Get and set cookies">
+        <meta name="keywords" content="html, css, web, web development, javascript">
+        <title>Get and set cookies</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css">
+        <link rel="stylesheet" href="./assets/style/index.css" media="all">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+        <script src="./assets/script/app.js" defer></script>
+    </head>
+    <body>
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1>Welcome to the Cookies Website</h1>
+                <p>If you haven't saved the cookies in last 20 seconds, you will see
+                    a modal to save your preferred cookies.
+                    The selections only last for 20 seconds.
+                </p>
+            </div>
+        </div>
+
+        <div id="cookieModal" class="modal">
+            <div class="modal-content">
+                <h2>Cookies</h2>
+                <p>
+                    A <span class="purple">cookie</span> is a small piece of text sent
+                    to your browser by a website you visit. It helps the site remember
+                    <span class="orange">information</span> about your visit, which
+                    can make it easier to visit the site again and make the site more
+                    <span class="green">useful</span> to you.
+                </p>
+                <div class="button-container">
+                    <button id="acceptAllCookies">Accept all</button>
+                    <button id="settingsButton">Settings</button>
+                </div>
+            </div>
+        </div>
+        <div id="settingsModal" class="modal">
+            <div class="switch-content">
+                <h2>Settings</h2>
+                <div class="switch-container">
+                    <label for="browser">Browser</label>
+                    <label class="switch">
+                        <input type="checkbox" id="browserCheckbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="switch-container">
+                    <label for="os">Operating system</label>
+                    <label class="switch">
+                        <input type="checkbox" id="osCheckbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="switch-container">
+                    <label for="screenWidth">Screen width</label>
+                    <label class="switch">
+                        <input type="checkbox" id="screenWidthCheckbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="switch-container">
+                    <label for="screenHeight">Screen height</label>
+                    <label class="switch">
+                        <input type="checkbox" id="screenHeightCheckbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <button id="savePreferences">Save Preferences</button>
+            </div>
+        </div>
+    </body>
+</html>
+    
+   
